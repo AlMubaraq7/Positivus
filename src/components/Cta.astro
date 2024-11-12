@@ -1,0 +1,11 @@
+---
+import { Image } from "astro:assets";
+import CTA from "/public/cta.svg"
+import CtaContent from "./CtaContent";
+---
+<div class="bg-gray-100 p-14 rounded-2xl relative">
+    <CtaContent client:visible/>
+    <div class="hidden lg:block absolute -top-6 right-20">
+        <Image src={CTA} alt="cta-illustration" srcset="../../public/cta.svg" class="object-contain">
+    </div>
+</div>

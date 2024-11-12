@@ -1,0 +1,11 @@
+---
+import TeamCardItem from "./TeamCardItem";
+import { teamData } from "../data/teamData";
+---
+<div class="grid grid-cols-[repeat(auto-fill,minmax(300px,1fr))] gap-x-5 gap-y-8 place-items-center">
+    {teamData.map(item => 
+        (
+            <TeamCardItem image={item.image} name={item.name} occupation={item.occupation} bio={item.bio} client:visible/>
+        )
+    )}
+</div>

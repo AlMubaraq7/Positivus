@@ -1,0 +1,45 @@
+---
+import { Image } from "astro:assets"
+import Logo from "/public/logo-white.svg"
+import LinkedIn from "/public/linkedIn-light.svg";
+import Facebook from "/public/facebook-light.svg";
+import Twitter from "/public/twitter-light.svg";
+import Button from "./Button";
+
+
+---
+<footer class="py-12 px-8 lg:px-12 flex flex-col gap-12 bg-dark rounded-t-3xl">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-0 justify-between items-center">
+            <Image src={Logo} alt="Logo" class="md:w-44 lg:w-52 xl:w-60"/>
+            <ul class="font-normal text-base xl:text-lg flex flex-col md:flex-row gap-4 lg:gap-8 cursor-pointer text-white items-center md:items-stretch">
+                <li class="hover:motion-preset-shake">About us</li>
+                <li class="hover:motion-preset-shake">Services</li>
+                <li class="hover:motion-preset-shake">Use Cases</li>
+                <li class="hover:motion-preset-shake">Pricing</li>
+                <li class="hover:motion-preset-shake">Blog</li>
+            </ul>
+            <div class="flex gap-4 *:cursor-pointer *:md:size-6 *:lg:size-8">
+                <Image src={LinkedIn} alt="linkedIn" class="hover:motion-preset-shake"/>
+                <Image src={Twitter} alt="twitter" class="hover:motion-preset-shake"/>
+                <Image src={Facebook} alt="facebook" class="hover:motion-preset-shake">
+            </div>
+        </div>
+        <div class="flex flex-col md:flex-row gap-6 md:gap-3 lg:gap-0">
+            <div class="flex flex-col gap-4 [&_span]:text-white [&_span]:md:text-base [&_span]:lg:text-lg md:grow items-center md:items-stretch">
+                <h4 class="w-fit md:text-base lg:text-lg xl:text-xl font-medium bg-primary border border-primary rounded-md px-1 text-black text-center">Contact us:</h4>
+                <span>Email: info@positivus.com</span>
+                <span>Phone: 555-567-8901</span>
+                <span>Address: 1234 Main St</span>
+                <span>Moonstone City, Stardust State 12345 </span>
+                </div> 
+            <div class="py-12 px-6 lg:px-10 rounded-lg bg-grey flex flex-col md:flex-row md:justify-center md:grow gap-6 items-stretch md:items-center">
+                <input type="email" class="rounded-xl p-5 border border-white text-white md:basis-1/2 bg-transparent placeholder:text-white outline-none" placeholder="Email"/>
+                <Button variant="secondary" className="p-5 basis-1/2 w-full text-nowrap">Subscribe to news</Button>
+            </div>
+        </div>
+        <hr class="border border-gray-400"/>
+        <div class="flex flex-col md:flex-row items-center text-base xl:text-lg text-white gap-4 font-light ">
+            <span>© 2023 Positivus. All Rights Reserved.</span>
+            <span>Privacy Policy</span>
+        </div>
+</footer>           

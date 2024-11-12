@@ -1,0 +1,55 @@
+---
+import ServiceCardItem from "./ServiceCardItem";
+import SEO from "../../public/seo.svg";
+import PPC from "../../public/ppc.svg";
+import SMM from "../../public/smm.svg";
+import EM from "../../public/em.svg";
+import CC from "../../public/cc.svg";
+import AT from "../../public/at.svg";
+---
+
+ 
+<div class="grid lg:grid-cols-[repeat(2,450px)] xl:grid-cols-[repeat(2,550px)] place-items-center gap-6">
+      <ServiceCardItem
+        bgColor="grey"
+        service={["Search Engine", "Optimization"]}
+        image={SEO}
+        client:load
+      />
+      <ServiceCardItem
+        bgColor="green"
+        service={["Pay-per-click", "advertising"]}
+        image={PPC}
+        client:load
+
+      />
+      <ServiceCardItem
+        bgColor="black"
+        service={["Social Media", "Marketing"]}
+        image={SMM}
+        client:load
+
+      />
+      <ServiceCardItem
+        bgColor="grey"
+        service={["Email", "Marketing"]}
+        image={EM}
+        client:load
+
+      />
+      <ServiceCardItem
+        bgColor="green"
+        service={["Content", "Creation"]}
+        image={CC}
+        client:load
+
+      />
+      <ServiceCardItem
+        bgColor="black"
+        service={["Analytics and", "Tracking"]}
+        image={AT}
+        client:load
+
+      />
+    </div>
+

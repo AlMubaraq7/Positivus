@@ -1,0 +1,56 @@
+---
+import Layout from '../layouts/Layout.astro';
+import LogoCarousel from '../components/LogoCarousel.astro';
+import Section from "../components/Section";
+import SectionTitle from "../components/SectionTitle";
+import CaseStudy from '../components/CaseStudy';
+import Accordion from "../components/Accordion";
+import ServiceCardList from '../components/ServiceCardList.astro';
+import TeamCardList from '../components/TeamCardList.astro';
+import TestimonialList from '../components/TestimonialList';
+import Form from "../components/Form";
+import Footer from '../components/Footer.astro';
+import HeroSection from '../components/HeroSection';
+import Cta from '../components/Cta.astro';
+
+---
+<Layout title="Positivus">
+	<main>
+        <Section>
+            <HeroSection client:visible/>
+        </Section>
+        <LogoCarousel/>
+        <Section className="flex flex-col gap-20">
+            <SectionTitle title='Services' description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:' client:visible/>
+            <ServiceCardList client:visible/>
+        </Section>
+        <Section>
+            <Cta/>
+        </Section>
+        <Section className='flex flex-col gap-14'>
+            <SectionTitle title='Case Studies' description='Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies' client:visible/>
+            <CaseStudy client:visible/>
+        </Section>
+        <Section className='flex flex-col gap-14'>
+            <SectionTitle title='Our Working Process' description=`Step-by-Step Guide to Achieving Your Business Goals` client:visible/>
+            <Accordion client:visible/>
+        </Section>
+        <Section  className='flex flex-col gap-14'>
+            <SectionTitle title='Team' description='Meet the skilled and experienced team behind our successful digital marketing strategies' client:visible/>
+            <TeamCardList/>
+        </Section>
+        <Section className='flex flex-col gap-14'>
+            <SectionTitle title='Testimonials' description='Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services' client:visible/>
+            <TestimonialList client:visible/>
+        </Section>
+        <Section className='flex flex-col gap-14'>
+            <SectionTitle title='Contact Us' description="Connect with Us: Let's Discuss Your Digital Marketing Needs" client:visible/>
+            <Form client:visible/>
+        </Section>
+        <Section className='pb-0 md:px-0 lg:px-16'>
+            <Footer client:visible/>
+        </Section>
+    </main>
+</Layout>
+
+
