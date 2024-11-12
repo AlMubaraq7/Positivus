@@ -17,7 +17,7 @@ import Cta from '../components/Cta.astro';
 <Layout title="Positivus">
 	<main>
         <Section>
-            <HeroSection client:visible/>
+            <HeroSection client:load/>
         </Section>
         <Section>
             <!-- <LogoCarousel/> -->
@@ -35,7 +35,7 @@ import Cta from '../components/Cta.astro';
         </Section>
         <Section className='flex flex-col gap-14'>
             <SectionTitle title='Our Working Process' description=`Step-by-Step Guide to Achieving Your Business Goals` client:visible/>
-            <Accordion client:visible/>
+            <Accordion client:load/>
         </Section>
         <Section  className='flex flex-col gap-14'>
             <SectionTitle title='Team' description='Meet the skilled and experienced team behind our successful digital marketing strategies' client:visible/>
@@ -43,7 +43,7 @@ import Cta from '../components/Cta.astro';
         </Section>
         <Section className='flex flex-col gap-14'>
             <SectionTitle title='Testimonials' description='Hear from Our Satisfied Clients: Read Our Testimonials to Learn More about Our Digital Marketing Services' client:visible/>
-            <TestimonialList client:visible/>
+            <TestimonialList client:load/>
         </Section>
         <Section className='flex flex-col gap-14'>
             <SectionTitle title='Contact Us' description="Connect with Us: Let's Discuss Your Digital Marketing Needs" client:visible/>
