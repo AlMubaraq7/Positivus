@@ -1,5 +1,5 @@
 import Button from "./Button";
-import Hero from "/public/Hero.svg";
+import Hero from "/public/hero.svg";
 import { clsx } from "clsx";
 import { motion } from "framer-motion";
 const HeroSection = () => {
