@@ -48,7 +48,7 @@ export const CtaContent = () => {
           }}
           viewport={{
             once: true,
-            margin: "-300px",
+            margin: "-200px",
           }}
           className="text-base md:text-lg"
         >
@@ -66,7 +66,7 @@ export const CtaContent = () => {
           }}
           viewport={{
             once: true,
-            margin: "-300px",
+            margin: "-200px",
           }}
         >
           <Button variant="primary" className="text-lg md:text-xl text-nowrap">

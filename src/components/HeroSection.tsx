@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Hero from "/public/Hero.svg";
 import { clsx } from "clsx";
 import { motion } from "framer-motion";
 const HeroSection = () => {
@@ -116,11 +117,7 @@ const HeroSection = () => {
         }}
         className={clsx("hidden lg:block max-w-[500px] flex-1")}
       >
-        <motion.img
-          src="/public/Hero.svg"
-          alt="Hero"
-          className="object-contain"
-        />
+        <motion.img src={Hero.src} alt="Hero" className="object-contain" />
       </motion.div>
     </motion.div>
   );

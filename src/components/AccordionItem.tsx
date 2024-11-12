@@ -45,7 +45,7 @@ export const AccordionItem = ({
         <motion.span className="text-xl sm:text-3xl md:text-5xl lg:text-6xl font-medium">
           {number}
         </motion.span>
-        <motion.span className="text-base font-medium sm:text-lg md:text-2xl lg:text-3xl whitespace-nowrap sm:whitespace-normal">
+        <motion.span className="text-[13px] font-medium sm:text-lg md:text-2xl lg:text-3xl whitespace-nowrap sm:whitespace-normal">
           {title}
         </motion.span>
         <motion.button
@@ -60,7 +60,7 @@ export const AccordionItem = ({
       />
       <motion.div
         className={clsx(
-          `text-[14px] md:text-lg`,
+          `text-[13px] md:text-lg`,
           isActive
             ? "motion-preset-slide-down-md motion-opacity-in-0"
             : "hidden"
