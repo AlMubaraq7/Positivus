@@ -2,7 +2,6 @@ import Button from "./Button";
 export const Form = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    const formData = new FormData(e.currentTarget);
   };
   return (
     <div className="w-full rounded-3xl bg-gray-100 overflow-hidden py-16 px-16 h-[700px] flex flex-col xl:items-stretch relative gap-12">

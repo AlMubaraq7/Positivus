@@ -1,5 +1,5 @@
 import { useRef } from "react";
-import { useInView, inView } from "framer-motion";
+import { useInView } from "framer-motion";
 import clsx from "clsx";
 export const CaseStudy = () => {
   const desktopRef = useRef(null);
