@@ -4,12 +4,12 @@ import Button from "./Button"
 import Logo from "/public/logo-black.svg"
 import Hamburger from "./Hamburger"
 ---
-<header class="container w-full mt-8 px-16 flex items-center justify-between">
-    <div class="cursor-pointer size-fit">
+<header class="container w-full mx-auto mt-8 px-4 xl:px-16 flex items-center justify-between">
+    <div class="cursor-pointer w-48 sm:size-fit">
         <Image src={Logo} alt="Positivus"/>
     </div>
-    <nav class="flex items-center gap-8">
-        <ul class="font-normal text-lg flex gap-8 cursor-pointer">
+    <nav class="hidden lg:flex items-center gap-8 ">
+        <ul class="font-normal text-lg flex gap-5 xl:gap-8 cursor-pointer">
             <li class="hover:motion-preset-shake">About us</li>
             <li class="hover:motion-preset-shake">Services</li>
             <li class="hover:motion-preset-shake">Use Cases</li>
@@ -19,6 +19,6 @@ import Hamburger from "./Hamburger"
         <Button variant="outline">
             Request a quote
         </Button>
-        <Hamburger client:visible/>
     </nav>
+    <Hamburger client:visible/>     
 </header>
