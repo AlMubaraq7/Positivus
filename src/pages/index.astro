@@ -1,6 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LogoCarousel from '../components/LogoCarousel.astro';
+// import LogoCarousel from '../components/LogoCarousel.astro';
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import CaseStudy from '../components/CaseStudy';
@@ -24,7 +24,7 @@ import Cta from '../components/Cta.astro';
         </Section>
         <Section className="flex flex-col gap-20">
             <SectionTitle title='Services' description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:' client:visible/>
-            <ServiceCardList client:visible/>
+            <ServiceCardList/>
         </Section>
         <Section>
             <Cta/>
@@ -50,7 +50,7 @@ import Cta from '../components/Cta.astro';
             <Form client:visible/>
         </Section>
         <Section className='pb-0 md:px-0 lg:px-16'>
-            <Footer client:visible/>
+            <Footer/>
         </Section>
     </main>
 </Layout>

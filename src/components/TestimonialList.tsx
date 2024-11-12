@@ -4,7 +4,6 @@ import { testimonialData } from "../data/testimonialData";
 import CarouselDot from "./CarouselDot";
 import clsx from "clsx";
 import TestimonialItem from "./TestimonialItem";
-import { motion } from "framer-motion";
 
 export const TestimonialList = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -80,7 +79,7 @@ export const TestimonialList = () => {
           className="hidden md:block"
         />
         <div className="flex gap-4 self-end">
-          {testimonialData.map((data, index) => (
+          {testimonialData.map((_, index) => (
             <CarouselDot
               key={index}
               className={clsx(
