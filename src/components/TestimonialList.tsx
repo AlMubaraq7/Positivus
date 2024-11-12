@@ -4,6 +4,8 @@ import { testimonialData } from "../data/testimonialData";
 import CarouselDot from "./CarouselDot";
 import clsx from "clsx";
 import TestimonialItem from "./TestimonialItem";
+import ArrowLeft from "/public/arrowL.svg";
+import ArrowRight from "/public/arrowR.svg";
 
 export const TestimonialList = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -73,7 +75,7 @@ export const TestimonialList = () => {
       </div>
       <div className="flex gap-16 [&_img]:cursor-pointer w-fit self-center">
         <img
-          src="/public/arrowL.svg"
+          src={ArrowLeft.src}
           alt="arrowLeft"
           onClick={prevSlide}
           className="hidden md:block"
@@ -93,7 +95,7 @@ export const TestimonialList = () => {
           ))}
         </div>
         <img
-          src="/public/arrowR.svg"
+          src={ArrowRight.src}
           alt="arrowRight"
           onClick={nextSlide}
           className="hidden md:block"

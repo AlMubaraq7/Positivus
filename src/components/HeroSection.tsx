@@ -79,11 +79,7 @@ const HeroSection = () => {
           }}
           className={clsx("block w-[350px] sm:w-[450px] lg:hidden")}
         >
-          <motion.img
-            src="/public/Hero.svg"
-            alt="Hero"
-            className="object-contain"
-          />
+          <motion.img src={Hero.src} alt="Hero" className="object-contain" />
         </motion.div>
         <motion.p
           initial={descVariant.hidden}
