@@ -12,7 +12,7 @@ export const ServiceCardItem = ({
   service: [top, bottom],
 }: Props) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-300px" });
+  const isInView = useInView(ref, { once: true, margin: "-200px" });
   return (
     <div
       ref={ref}
