@@ -1,6 +1,7 @@
 ---
 import "@fontsource-variable/space-grotesk"
 import Header from "../components/Header.astro";
+import OgImage from "/public/og-image.png"
 interface Props {
 	title: string;
 }
@@ -14,8 +15,14 @@ const { title } = Astro.props;
 		<meta charset="UTF-8" />
 		<meta name="description" content="Positivus helps business thrive online" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta property="og:title" content="Positivus" />
+		<meta property="og:description" content="Positivus helps business thrive online." />
+		<meta property="og:image" content={OgImage.src} />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://positivus-olive.vercel.app">
+
 		<title>{title}</title>
 	</head>
 	<body class="font-sans min-h-screen relative">
