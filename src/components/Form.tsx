@@ -1,4 +1,5 @@
 import Button from "./Button";
+import Contact from "/public/contact.svg";
 export const Form = () => {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -70,7 +71,7 @@ export const Form = () => {
         </fieldset>
       </form>
       <img
-        src="/public/contact.svg"
+        src={Contact.src}
         alt="contact"
         className="hidden xl:block xl:absolute xl:top-0 xl:-right-80"
       />
