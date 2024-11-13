@@ -15,19 +15,6 @@ export default {
       boxShadow: {
         card: "0 5px 0 0 #191A23",
       },
-      keyframes: {
-        scroll: {
-          "0%": {
-            transform: "translateX(0)",
-          },
-          "100%": {
-            transform: "translateX(-100%)",
-          },
-        },
-      },
-      animation: {
-        scroll: "scroll 20s linear infinite",
-      },
     },
   },
   plugins: [require("tailwindcss-motion")],

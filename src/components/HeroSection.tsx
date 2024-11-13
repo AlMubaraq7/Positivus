@@ -58,7 +58,7 @@ const HeroSection = () => {
     },
   };
   return (
-    <motion.div className="flex justify-between items-center sm:mt-10 overflow-hidden">
+    <motion.div className="flex justify-between items-center mt-20 overflow-hidden">
       <motion.div className="flex flex-col justify-center items-center w-full gap-8 flex-1 sm:text-center lg:justify-normal lg:items-stretch  lg:max-w-xl lg:text-left">
         <motion.h1
           initial={titleVariant.hidden}

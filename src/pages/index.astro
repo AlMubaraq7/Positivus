@@ -1,6 +1,5 @@
 ---
 import Layout from '../layouts/Layout.astro';
-// import LogoCarousel from '../components/LogoCarousel.astro';
 import Section from "../components/Section";
 import SectionTitle from "../components/SectionTitle";
 import CaseStudy from '../components/CaseStudy';
@@ -18,9 +17,6 @@ import Cta from '../components/Cta.astro';
 	<main>
         <Section>
             <HeroSection client:load/>
-        </Section>
-        <Section>
-            <!-- <LogoCarousel/> -->
         </Section>
         <Section className="flex flex-col gap-20">
             <SectionTitle title='Services' description='At our digital marketing agency, we offer a range of services to help businesses grow and succeed online. These services include:' client:visible/>

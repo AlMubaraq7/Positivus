@@ -49,10 +49,23 @@ export const AccordionItem = ({
           {title}
         </motion.span>
         <motion.button
-          className="appearance-none flex items-center justify-center  cursor-pointer text-2xl size-11 md:text-5xl lg:size-16 lg:text-6xl font-semibold ml-0 sm:ml-auto"
+          className="relative appearance-none flex items-center justify-center  cursor-pointer text-2xl size-11 md:text-5xl lg:size-16 lg:text-6xl font-semibold ml-0 sm:ml-auto"
           onClick={onClick}
+          initial="hidden"
+          animate={isActive ? "visible" : "hidden"}
         >
-          {isActive ? "-" : "+"}
+          <motion.span
+            className="absolute h-1 w-4 bg-dark"
+            variants={{
+              hidden: {
+                rotate: "90deg",
+              },
+              visible: {
+                rotate: "0deg",
+              },
+            }}
+          ></motion.span>
+          <motion.span className="absolute h-1 w-4 bg-dark"></motion.span>
         </motion.button>
       </motion.div>
       <motion.hr
